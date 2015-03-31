@@ -2,10 +2,12 @@ package student;
 
 import java.util.ArrayList;
 
-public class ClassInfo {
+public class ClassandGrades {
 	private int classnum;
 	private String classname;
 	ArrayList Students = new ArrayList();
+	
+	//TODO: Ìí¼Ó°à¼¶¼ì²é
 	
     public int getClassnum() {
 		return classnum;

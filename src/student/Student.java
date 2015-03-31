@@ -1,22 +1,20 @@
 package student;
 
-public class StudentInfo {
+public class Student {
 	private String name;
-	private String classnum;
 	private int id;
 	private int age;
-	private ClassInfo ofclass;
+	private ClassandGrades ofclass;
 	
-	public StudentInfo(String name, String classnum, int id, int age) {
+	public Student(String name, int id, int age) {
 		super();
 		setName(name);
-		setClassnum(classnum);
 		setId(id);
 		setAge(age);
 	
 	}
 	
-	public StudentInfo() {
+	public Student() {
 	
 		
 	}
@@ -28,19 +26,10 @@ public class StudentInfo {
 	
 	public void setName(String name) {
 		this.name = name;
-	
+	//TODO: Ìí¼ÓÃû×Ö
 	}
 	
-	public String getClassnum() {
-		return classnum;
-	
-	}
-	
-	public void setClassnum(String classnum) {
-		this.classnum = classnum;
-	
-	}
-	
+
 	public int getId() {
 		return id;
 	
@@ -79,19 +68,19 @@ public class StudentInfo {
 	
 	}
 	
-	public ClassInfo getOfclass() {
+	public ClassandGrades getOfclass() {
 		return ofclass;
 	
 	}
 	
-	public void setOfclass(ClassInfo ofclass) {
+	public void setOfclass(ClassandGrades ofclass) {
 		this.ofclass = ofclass;
 	
 	}
 	
 	@Override
 	public String toString() {
-		return "StudentInfo [name=" + name + ", classnum=" + classnum + ", id="
+		return "StudentInfo [name=" + name +  ", id="
 				+ id + ", age=" + age + ", ofclass=" + ofclass + "]";
 	}
 	
