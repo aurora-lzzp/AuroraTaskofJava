@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class ClassandGrades {
 	private int classnum;
 	private String classname;
-	ArrayList Students = new ArrayList();
+	ArrayList<Student> Students = new ArrayList<Student>();
 	
 	//TODO: Ìí¼Ó°à¼¶¼ì²é
 	
@@ -21,13 +21,22 @@ public class ClassandGrades {
 	public void setClassname(String classname) {
 		this.classname = classname;
 	}
-	public ArrayList getStudents() {
+	public ArrayList<Student> getStudents() {
 		return Students;
 	}
-	public void setStudents(ArrayList students) {
+	public void setStudents(ArrayList<Student> students) {
 		Students = students;
 	}
 	
-    
+	public ClassandGrades(int classnum, String classname,
+			ArrayList<Student> students) {
+		this.classnum = classnum;
+		this.classname = classname;
+		Students = students;
+	}
+	
+	public ClassandGrades(){
+		
+	}
     
 }
