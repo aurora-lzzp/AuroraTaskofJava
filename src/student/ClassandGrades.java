@@ -97,7 +97,7 @@ public class ClassandGrades {
 	@Override
 	public String toString() {
 		return "ClassandGrades [classnum=" + classnum + ", classname="
-				+ classname + ", students=" + students.size() + "]";
+				+ classname + ", students=" + ((null != students && !students.isEmpty())? students.size() : "null" ) + "]";
 	}
 
     
