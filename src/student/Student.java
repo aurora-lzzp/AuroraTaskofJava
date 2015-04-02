@@ -4,14 +4,14 @@ public class Student {
 	private String name;
 	private int id;
 	private int age;
-	private ClassandGrades ofclass;
+	private int ofclass;
 	
-	public Student(String name, int id, int age) {
+	public Student(String name, int id, int age, int classid) {
 		super();
 		setName(name);
 		setId(id);
 		setAge(age);
-	
+		setOfclass(classid);
 	}
 	
 	public Student() {
@@ -68,12 +68,12 @@ public class Student {
 	
 	}
 	
-	public ClassandGrades getOfclass() {
+	public int getOfclass() {
 		return ofclass;
 	
 	}
 	
-	public void setOfclass(ClassandGrades ofclass) {
+	public void setOfclass(int ofclass) {
 		this.ofclass = ofclass;
 	
 	}
