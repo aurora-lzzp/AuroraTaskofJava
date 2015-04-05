@@ -27,6 +27,16 @@ public class ClassandGrades {
 		students = stu;
 	}
 	
+	public Student searchStubyName(String name){
+		for(Student stu : students){
+			if(stu.getName().equals(name)){
+				return stu;
+			}
+			
+		}
+		return null;
+	}
+	
 	public boolean addStudent(Student stu){
 		if(stu.getOfclass() == this.classnum){
 			return students.add(stu);	
@@ -36,10 +46,12 @@ public class ClassandGrades {
 	
 	public boolean addStudent(String name, int id, int age, int classid){
 		if(this.classnum == classid){
-		for(Student obj : students){
-			if(obj.getId() == id){
-				return false;
-			}
+			if(students != null && students.size() != 0){
+				for(Student obj : students){
+					if(obj.getId() == id){
+						return false;
+					}
+				}
 		}
 		Student stu = new Student(name, id, age, classid);
 		students.add(stu);
