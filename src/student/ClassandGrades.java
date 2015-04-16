@@ -95,6 +95,13 @@ public class ClassandGrades {
 		
 	}
 	
+	/******************************************************/
+	
+	IIntro teacher = new MathTeacher();
+	public void showTeacher(MathTeacher teacher){
+		teacher.Intro();
+	}
+	
 	public ClassandGrades(int classnum, String classname,
 			ArrayList<Student> stu) {
 		this.classnum = classnum;
